@@ -62,6 +62,7 @@ const userControllers={
                     console.log(datos.user.red)
                     req.session.loggedin=true          //creo una varaible de session y en caso de que nos logeemos este en true
                     req.session.name = datos.name            //creo una variable de session a mi gusto y guardo en session el nombre para luego utilizarlo en la vista. 'Datos.name' seria mi nombre en la base de datos
+                    req.session.rol = datos.rol 
                     res.render('login',{
                         alert:true,
                         alertTitle: "Conexion exitosa",
