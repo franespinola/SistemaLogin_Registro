@@ -17,8 +17,6 @@ app.set('views','./src/views');
 const dotenv= require('dotenv')
 dotenv.config({path:'./.env'})
 
-//--bcryptjs
-const bcryptjs=require('bcryptjs')
 //--session
 const session= require('express-session')
 app.use(session({
@@ -32,5 +30,6 @@ app.use(express.json());
 
 const usersRoutes = require('./src/routes/usersRoutes');
 const indexRoutes = require('./src/routes/indexRoutes');
+
 app.use('/',usersRoutes)
 app.use('/',indexRoutes)
