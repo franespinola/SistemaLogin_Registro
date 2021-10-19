@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="public/css/style.css">
 </head>
 <body>
-    <h5>como estas</h5>
+    <% if(login){%>
+        <h1>el usuario conectado es:<%=name%></h1>
+        <a href="/logout" class="a-logout"> Logout</a>
+        <%} else {%>
+            <h1><%=name%></h1>
+            <a href="/login" class=a-login> Go login</a>
+        <%} %> 
+
 </body>
 </html>
