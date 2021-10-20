@@ -35,7 +35,9 @@ const apiControllers={
                 id:id
             }
         })
-        res.redirect('users')
+        .then(()=>{
+            res.redirect('/api/users')
+        })
     }
 
 }

@@ -29,7 +29,7 @@ const userControllers={
                 alertIcon:'success',
                 showConfirmButton:false,
                 timer: 1500,
-                ruta:''
+                ruta:'/login'
             })
         })
         .catch(err=>{
